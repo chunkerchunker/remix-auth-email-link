@@ -335,7 +335,7 @@ export class EmailLinkStrategy<User> extends Strategy<
       email,
       form,
       magicLinkVerify: false,
-    }).catch(() => null)
+    })
 
     await this.sendEmail({
       emailAddress: email,
